@@ -17,6 +17,7 @@ def on_input_change():
     with st.spinner("Generating response"):
         response = loop.run_until_complete(get_response(user_input))
         st.session_state.generated.append({'data': response})
+    st.session_state.user_input = ""
 
 def on_clear_btn_click():
     del st.session_state.past[:]
@@ -31,9 +32,6 @@ st.session_state.setdefault(
 
 st.title("SMIBot")
 
-with st.container():
-    st.text_input("User Input:", on_change=on_input_change, key="user_input")
-
 chat_placeholder = st.empty()
 
 with chat_placeholder.container():    
@@ -45,5 +43,7 @@ with chat_placeholder.container():
             allow_html=True,
             is_table=True
         )
-    
+
+with st.container():
+    st.text_input("User Input:", on_change=on_input_change, key="user_input")
     st.button("Clear message", on_click=on_clear_btn_click)
