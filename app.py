@@ -2,8 +2,12 @@ import streamlit as st
 from streamlit_chat import message
 import requests
 import asyncio
+from dotenv import load_dotenv
+import os
 
-API_CHATBOT = "http://localhost:5002/smi/chatbot"
+load_dotenv()
+
+API_CHATBOT = os.getenv('API_CHATBOT')
 
 async def get_response(question):
     response = requests.get(API_CHATBOT, params={'query': question})

@@ -1,0 +1,5 @@
+streamlit==1.15.0
+streamlit-chat==0.1.0
+requests==2.26.0
+asyncio==3.5.4
+python-dotenv==0.19.2
