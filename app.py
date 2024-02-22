@@ -9,8 +9,20 @@ load_dotenv()
 
 API_CHATBOT = os.getenv('API_CHATBOT')
 
+def get_chat_history():
+    history = []
+    for i in range(len(st.session_state['generated'])):
+        history.append({'role': 'user', 'content': st.session_state['past'][i]})
+        history.append({'role': 'assistant', 'content': st.session_state['generated'][i]['data']})
+    return history
+
 async def get_response(question):
-    response = requests.get(API_CHATBOT, params={'query': question})
+    if len(st.session_state['generated']):
+        history = get_chat_history()
+        response = requests.post(API_CHATBOT, params={'query': question}, json={'history': history})
+    else:
+        response = requests.get(API_CHATBOT, params={'query': question})
+    
     return response.json()["message"]["content"]
 
 def on_input_change():
