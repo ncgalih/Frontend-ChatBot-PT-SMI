@@ -13,5 +13,5 @@ RUN pip install -r requirements.txt
 # Copy the application code into the container
 COPY . .
 
-# Set the entry point command with gunicorn
-CMD ["streamlit", "run", "app.py"]
+# Set the entry point command with streamlit
+CMD ["streamlit", "run", "--server.port", "5003", "app.py"]
