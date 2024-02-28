@@ -36,7 +36,7 @@ Fitur untuk menyimpan data percakapan pengguna dan sistem ke dalam bentuk list y
 ## Tech Stack
 ### 1. Python
 ### 2. Streamlit
-### 4. Docker
+### 3. Docker
 
 <a name="run-local"></a>
 ## How to Run Locally
