@@ -18,7 +18,7 @@
 <a name="api-info"></a>
 ## Information About this App
 Tampilan website sederhana yang dibangun menggunakan framework Streamlit. Website ini merupakan tampilan atau frontend dari sistem ChatBot PT SMI yang sebelumnya sudah kami kembangkan. Website ini hanya menampilkan interaksi atau chat yang terjadi antara pengguna dengan sistem backend <a href='https://github.com/dutaramadhan/API-ChatBot-PT-SMI'>ChatBot PT SMI</a>. Website ini mampu menyimpan history chat di dalam array yang diberikan kepada API ChatBot sebagai input agar sistem memahami percakapan atau interaksi yang sebelumnya dilakukan oleh user dan juga sistem.
-![Tampilan Website](https://drive.google.com/file/d/1CpvhGemfxAdzEMBwoMH9L0mPVsGm6TQl/view?usp=drive_link)
+![Alur Sistem](https://drive.google.com/uc?id=1CpvhGemfxAdzEMBwoMH9L0mPVsGm6TQl)
 
 <a name="main-feature"></a>
 ## Main Features
