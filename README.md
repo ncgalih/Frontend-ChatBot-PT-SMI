@@ -8,12 +8,11 @@
 
    b. [Chat with History](#chat-history)
    
-3. [System's Flow](#systems-flow)
-4. [Tech Stack](#tech-stack)
-5. [How to Run Locally](#run-local)
-6. [How to Deploy](#deploy)
-7. [Live Instance](#live-instance)
-8. [Related Repository](#related-repo)
+3. [Tech Stack](#tech-stack)
+4. [How to Run Locally](#run-local)
+5. [How to Deploy](#deploy)
+6. [Live Instance](#live-instance)
+7. [Related Repository](#related-repo)
 
 <a name="api-info"></a>
 ## Information About this App
@@ -28,9 +27,6 @@ Fitur untuk menampilkan interaksi atau percakapan pengguna dengan sistem. Bertuj
 <a name="chat-history"></a>
 ### b. Chat with History
 Fitur untuk menyimpan data percakapan pengguna dan sistem ke dalam bentuk list yang nantinya dapat digunakan sebagai input bagi sistem agar sistem memahami percakapan atau interaksi yang sebelumnya dilakukan oleh user dan juga sistem.
-
-<a name="systems-flow"></a>
-## System's Flow
 
 <a name="tech-stack"></a>
 ## Tech Stack
