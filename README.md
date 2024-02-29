@@ -1,4 +1,4 @@
-<h1 align="center">API Chatbot PT SMI</h1>
+<h1 align="center">Frontend Chatbot PT SMI</h1>
 
 ## Table of Contents
 1. [Information About App](#api-info)
